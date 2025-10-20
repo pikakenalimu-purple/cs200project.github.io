@@ -55,7 +55,7 @@ Date Due: 10/19/2025 -->
       <div class="wrap grid-2">
         <article>
           <h3><span lang="haw">Moʻolelo</span> <span class="sub">About</span></h3>
-          <p><strong>CUZINS HUI</strong> is a Hawaiʻi 501(c)(3) (est. 1998, revitalized 2024) empowering keiki through sport and service. Our programs blend fundamentals, character, and community service                     opportunities.</p>
+          <p><strong>CUZINS HUI</strong> is a Hawaiʻi 501(c)(3) (est. 1998, revitalized 2024) empowering keiki through sport and service. Our programs blend fundamentals, character, and community service opportunities.</p>
           <ul class="check">
             <li>Community-based training (ages 10–16)</li>
             <li>Scholarship & travel opportunities</li>
@@ -164,7 +164,7 @@ Date Due: 10/19/2025 -->
         <h3><span lang="haw">Kōkua</span> <span class="sub">Support Our Keiki</span></h3>
         <p>Donations help with gym time, equipment, travel, and scholarships. Mahalo for your kōkua!</p>
         <div class="cta-row">
-          <a class="btn" href="#" aria-disabled="true">Donate (link TBD)</a>
+          <a class="btn" href="#" aria-disabled="true">Donate</a>
           <a class="btn outline" href="#contact">Sponsorship Info</a>
         </div>
       </div>
@@ -174,14 +174,14 @@ Date Due: 10/19/2025 -->
       <div class="wrap grid-2">
         <article>
           <h3><span lang="haw">Pilina</span> <span class="sub">Connect With Us</span></h3>
-          <p>Email: <a href="mailto:info@cuzinshui.org">info@cuzinshui.org</a> (placeholder)</p>
-          <p>Instagram/Facebook: <em>@cuzinshui</em> (placeholder)</p>
-          <p>Practice Locations: Hilo / Puna (varies by season)</p>
+          <p>Email: <a href="mailto:info@cuzinshui.org">info@cuzinshui.org</a></p>
+          <p>Instagram/Facebook: <em>@cuzinshui</em></p>
+          <p>Practice Locations: Hilo / Waiakea Uka (varies by season and day)</p>
         </article>
         <aside class="card">
           <h4>Office Hours</h4>
-          <p>Mon–Fri 8:00a–5:00p • Practices per schedule</p>
-          <p class="small">Content is for class demo.</p>
+          <p>Mon–Fri 12:00p–8:00p • Practices per schedule</p>
+          <p class="small">Content may change unexpectantly.</p>
         </aside>
       </div>
     </section>
