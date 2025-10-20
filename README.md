@@ -181,7 +181,7 @@ Date Due: 10/19/2025 -->
         <aside class="card">
           <h4>Office Hours</h4>
           <p>Mon–Fri 8:00a–5:00p • Practices per schedule</p>
-          <p class="small">Content is for class demo (CS-200 Draft, 10/19/2025).</p>
+          <p class="small">Content is for class demo.</p>
         </aside>
       </div>
     </section>
