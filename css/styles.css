@@ -1,0 +1,169 @@
+/* styles.css
+   Author: Constance Nalimu
+   Project: CUZINS HUI   
+   Date Due: 10/19/2025 */
+
+/* ---------- Reset / Base ---------- */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height:1.6;
+  color:var(--ink);
+  background:var(--hui-sand);
+}
+img{max-width:100%;display:block}
+a{color:var(--hui-purple);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1100px;margin-inline:auto;padding:0 1rem}
+
+/* Accessibility helpers */
+.skip{position:absolute;left:-9999px;top:auto}
+.skip:focus{left:1rem;top:1rem;background:#fff;padding:.5rem 1rem;border-radius:8px;z-index:1000}
+.sr-only{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+
+/* bilingual label helper (Hawaiian • English) */
+.sub{display:block;font-size:.78em;opacity:.85;margin-top:.08rem}
+
+/* Header */
+.site-header{
+  background: linear-gradient(135deg, var(--hui-purple), var(--hui-seaglass));
+  color:#fff;
+  padding:2.5rem 0 2rem;
+  text-align:center;
+}
+.brand{margin:0;font-size:2rem;letter-spacing:.04em}
+.tag{margin:.25rem 0 0;font-weight:500}
+
+/* Navigation */
+.site-nav{background:#1f1a33}
+.site-nav ul{
+  display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;
+  margin:0;padding:.6rem
+}
+.site-nav a{color:#fff;padding:.55rem .9rem;border-radius:10px}
+.site-nav a:hover{background:rgba(255,255,255,.1)}
+.site-nav .btn{background:var(--hui-orange);color:#1b1000}
+.site-nav .btn:hover{background:#ffa466}
+
+/* Hero */
+.hero{
+  background:linear-gradient(180deg, rgba(110,198,192,.18), rgba(246,239,232,1));
+  padding:3.5rem 0 3rem;
+  text-align:center;
+}
+.hero h2{margin:.25rem 0 1rem;font-size:1.9rem}
+.cta-row{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  background:var(--hui-orange);
+  color:#1b1000;
+  padding:.8rem 1.1rem;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+  font-weight:700;
+}
+.btn:hover{filter:brightness(1.05)}
+.btn.outline{
+  background:transparent;color:var(--hui-purple);
+  border:2px solid var(--hui-purple)
+}
+.btn.block{display:block;text-align:center;margin-top:.5rem}
+
+/* Sections */
+.section{padding:3rem 0}
+.section.alt{background:#fff}
+h2,h3,h4{color:#231942}
+h3{margin:0 0 .85rem}
+h4{margin:.4rem 0}
+
+/* Layout utilities */
+.grid-2{display:grid;gap:1rem}
+.grid-3{display:grid;gap:1rem}
+@media (min-width:700px){
+  .grid-2{grid-template-columns:1.2fr .8fr}
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+}
+
+/* Cards & Blocks */
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:1rem 1.1rem;
+}
+.cards .card h4{margin-top:.2rem}
+
+.check{padding-left:1.2rem}
+.check li{margin:.35rem 0}
+.list-compact{padding-left:1.2rem}
+.list-compact li{margin:.25rem 0}
+.steps{padding-left:1.2rem}
+.steps li{margin:.4rem 0}
+
+/* subtle notice */
+.note{
+  margin-top:1rem;
+  padding:.8rem 1rem;
+  background:linear-gradient(90deg, rgba(192,57,43,.1), rgba(255,122,26,.1));
+  border-left:4px solid var(--hui-red);
+  border-radius:10px;
+}
+
+/* Donate band */
+.donate{
+  background: linear-gradient(135deg, var(--hui-seaglass), #8ad9d4 60%, #e7faf8);
+  text-align:center;
+}
+.donate h3{margin-top:0}
+
+/* Badges for Board/Coaches */
+.badge{
+  display:inline-block;
+  padding:.2em .6em;
+  border-radius:8px;
+  font-size:.8em;
+  color:#fff;
+  margin-bottom:.45rem;
+}
+.badge.purple{background:var(--hui-purple)}
+.badge.orange{background:var(--hui-orange);color:#1b1000}
+.badge.red{background:var(--hui-red)}
+.badge.seaglass{background:var(--hui-seaglass)}
+
+/* Footer */
+.site-footer{
+  background:#120e20;color:#cfd2e2;
+  padding:1.3rem 0;text-align:center;
+}
+.site-footer .tiny{font-size:.8rem;opacity:.8}
+
+/* Legacy IDs support (if any old markup remains) */
+#container{max-width:1100px;margin:0 auto}
+#header, header{ }
+#nav nav ul{list-style:none}
+#main{padding:1rem}
+#footer{font-size:.9rem;text-align:center}
+
+/* Brand Color System (harmonized) */
+:root{
+  --hui-purple:#4B2E83;     
+  --hui-orange:#FF7A1A;      
+  --hui-red:#C0392B;         
+  --hui-seaglass:#6EC6C0;    
+  --hui-sand:#F6EFE8;        
+  --ink:#1f1f1f;             
+  --muted:#5a5a5a;           
+  --card:#ffffff;           
+  --shadow: 0 8px 20px rgba(0,0,0,.08);
+  --radius: 14px;
+}
+
+/* Print basics */
+@media print{
+  .site-nav,.hero .cta-row,.btn{display:none !important}
+  a{text-decoration:underline}
+  body{background:#fff;color:#000}
+}
